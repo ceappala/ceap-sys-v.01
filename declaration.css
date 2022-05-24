@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.decla_content{
+    width: 100vw;
+    height: auto;
+    margin: 5px auto;
+    text-align: center;
+}
+.decla_content h3{
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 15px auto;
+}
+.decla_content h4{
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px auto;
+}
+.decla_content h5{
+    width: 100%;
+    font-size: 17px;
+    margin: 15px auto;
+}
+
+.decla_content h3, h4, h5{
+    text-align: center;
+}
+.order_no{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 25px;
+    font-weight: bold;
+}
+.decla_para{
+    margin: 5px 30px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.mngr_sign{
+    height: 30%;
+    width: 100%;
+    background: black;
+    margin: 30px 10px;
+}
+.mgr_n{
+    width: 90%;
+    height: 50%;
+    float: left;
+    text-align: right;
+}
+.mgr_pwr{
+    width: 90%;
+    height: 50%;
+    float: left;
+    text-align: right;
+}
+.second_decla{
+    width: 100%;
+}
+.footer{
+    height: 30%;
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 30px auto;
+}
+.date{
+    width: 50%;
+    text-align: left;
+}
+.sign{
+    width: 50%;
+    text-align: right;
+}
+.sign p{
+    text-align: center;
+}
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+  }

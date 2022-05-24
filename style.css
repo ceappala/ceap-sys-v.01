@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5vw;
+}
+.form-ceap{
+    width: 70%;
+    height: auto;
+    position: absolute;
+    border-radius: 30px;
+    left: 15%;
+    top: 10%;
+    padding: 15px;
+}
+.mb-3{
+    display: inline;
+    flex-direction: row;
+}
+.buttons{
+    padding: 15px;
+}
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+  }

@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.affidavit_content{
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  margin: 5px auto;
+  text-align: center;
+  padding: 76px 30px;
+  margin: 76px 20px;
+}
+h3{
+  font-size: 29px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px auto;
+}
+h4{
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px auto;
+}
+.affi_cont{
+  text-align: justify;
+  line-height: 2em;
+  padding: 30px;
+  font-size: 19px;
+}
+.footer_1{
+  width: 80%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  margin: 15px auto;
+  font-size: 19px;
+}
+.date p,.sign p{
+  font-size: 19px;
+}
+.date{
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-size: 19px;
+}
+.sign{
+  width: 50%;
+  text-align: right;
+  float: right;
+  font-size: 19px;
+}
+.footer_2{
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 19px;
+}
+.footer_2 p{
+  font-size: 19px;
+}
+.footer_3{
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 19px;
+  display: inline-flex;
+  flex-direction: row;
+}
+.mgr{
+  width: 50%;
+  font-size: 19px;
+  margin: 15px;
+}
+.edn_off{
+  width: 50%;
+  font-size: 19px;
+  margin: 15px;
+  float: right;
+}
+@media print {
+    @page { margin: 0; }
+    body { margin: 1.6cm; }
+  }
