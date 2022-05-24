@@ -439,14 +439,15 @@ function printFunction() {
 
   localStorage.setItem("place", place);
   localStorage.setItem("edn_offcr", edn_office);
+
   var appo_date = document.getElementById("appo_date_from").value;
-  appo_date = String(appo_date);
   localStorage.setItem("app_date", appo_date);
+
   var appo_date_to = document.getElementById("appo_date_to").value;
-  appo_date_to = String(appo_date_to);
+
   var to = "to";
   var onwards = "Onwards";
-  if (document.getElementById("appo_date_to").value == "") {
+  if (document.getElementById("appo_date_to").value =="") {
     appo_date_to = onwards;
   } else {
     appo_date_to = to.concat(
