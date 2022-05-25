@@ -83,6 +83,9 @@ h4{
   margin: 15px;
   float: right;
 }
+span{
+  font-weight: bold;
+}
 @media print {
     @page { margin: 0; }
     body { margin: 1.6cm; }

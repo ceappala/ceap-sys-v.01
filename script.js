@@ -462,40 +462,13 @@ function printFunction() {
     document.getElementById("submit").className = "btn btn-success";
   else document.getElementById("submit").className = "btn btn-success";
 
-  PrintAll();
+  
+  printPage();
 }
-/*PRINT PAGES DECLARATION & AFFIDAVIT*/
-function PrintAll() {
-  var pages = ["declaration.html", "affidavit.html"];
-
-  var printNext = function (i) {
-    i = i || 0;
-    if (i >= pages.length) {
-      return;
-    }
-
-    var wdw = window.open(
-      pages[i],
-      "print",
-      "left=200, top=200, width=950, height=500, toolbar=0, resizable=0"
-    );
-    wdw.addEventListener(
-      "load",
-      function () {
-        if (Boolean(wdw.chrome)) {
-          wdw.print();
-          setTimeout(function () {
-            printNext(++i);
-          }, 100);
-        }wdw.onload = function () {
-          wdw.print();
-          wdw.close();
-          setTimeout(function () {}, 100);
-        };
-      },
-      true
-    );
-    
-  };
-  printNext();
-}
+function printPage()
+   {
+      var div = document.getElementById("printerDecla");
+      var div2 = document.getElementById("printerAffi");
+      div.innerHTML = '<iframe src="declaration.html" onload="this.contentWindow.print();"></iframe>';
+      div2.innerHTML = '<iframe src="affidavit.html" onload="this.contentWindow.print();"></iframe>';
+   }
