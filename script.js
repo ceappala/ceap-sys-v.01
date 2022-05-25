@@ -486,7 +486,7 @@ function PrintAll() {
           wdw.print();
           setTimeout(function () {
             printNext(++i);
-          }, 100);
+          }, 500);
         }
       },
       true
