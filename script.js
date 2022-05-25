@@ -486,18 +486,16 @@ function PrintAll() {
           wdw.print();
           setTimeout(function () {
             printNext(++i);
-          }, 500);
-        }
+          }, 100);
+        }wdw.onload = function () {
+          wdw.print();
+          wdw.close();
+          setTimeout(function () {}, 100);
+        };
       },
       true
     );
-    wdw.onload = function () {
-      wdw.print();
-
-      wdw.close();
-      setTimeout(function () {}, 100);
-    };
+    
   };
-
   printNext();
 }
