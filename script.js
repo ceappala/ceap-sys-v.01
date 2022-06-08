@@ -276,7 +276,7 @@ function printFunction() {
   } else if (school == "Holy Ghost BHS Muttuchira") {
     edn_office = "Dist. Educational Officer,  Kuravilangad";
     place = "Muttuchira";
-  } else if (school == "St. Agnes GHS Muttuchira") {
+  } else if (school == "St. Agnes HS Muttuchira") {
     edn_office = "Dist. Educational Officer,  Kaduthuruthy";
     place = "Muttuchira";
   } else if (school == "St. Agnes LPS Muttuchira") {
