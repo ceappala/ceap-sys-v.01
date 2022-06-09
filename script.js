@@ -259,10 +259,10 @@ function printFunction() {
     edn_office = "Asst. Educational Officer, Koothattukulam";
     place = "Mutholapuram";
   } else if (school == "St. Paul’s HS Mutholapuram") {
-    edn_office = "Dist. Educational Officer,  Koothattukulam";
+    edn_office = "Dist. Educational Officer,  Muvattupuzha";
     place = "Mutholapuram";
   } else if (school == "St. Paul’s LPS Mutholapuram") {
-    edn_office = "Asst. Educational Officer, Muvattupuzha";
+    edn_office = "Asst. Educational Officer, Koothattukulam";
     place = "Mutholapuram";
   } else if (school == "St. George LPS Mutholy") {
     edn_office = "Asst. Educational Officer, Pala";
@@ -385,7 +385,7 @@ function printFunction() {
     edn_office = "Dist. Educational Officer,  Koothattukulam";
     place = "Vadakara";
   } else if (school == "Little Flower LPS Vadakara") {
-    edn_office = "Asst. Educational Officer, Muvattupuzha";
+    edn_office = "Asst. Educational Officer, Koothattukulam";
     place = "Vadakara";
   } else if (school == "St. George LPS Vailkanampara") {
     edn_office = "Asst. Educational Officer, Erattupetta";
