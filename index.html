@@ -17,11 +17,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body style="background: rgb(65, 65, 223)">
     <div class="form-ceap" style="background: rgb(34, 34, 190)">
       <!--NAME-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="namea" class="form-label col-3">Name</label>
         <input
           type="text"
@@ -31,7 +33,7 @@
         />
       </div>
       <!--ADDRESS-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="address" class="form-label col-3">Address</label>
         <input
           type="text"
@@ -41,7 +43,7 @@
         />
       </div>
       <!--Designation-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="desig" class="form-label col-3">Designation</label>
         <input
           type="text"
@@ -51,7 +53,7 @@
         />
       </div>
       <!--SCHOOL-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="school" class="form-label">School</label>
         <input
           class="form-control"
@@ -201,7 +203,7 @@
         </datalist>
       </div>
       <!--APPOINTNENT FROM-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="appo_date_from" class="form-label col-3"
           >Appointment Date</label
         >
@@ -213,7 +215,7 @@
         />
       </div>
       <!--APPOINTNENT To-->
-      <div class="mb-3 col">
+      <div class="mb-3 col" data-aos="flip-up">
         <label for="appo_date_to" class="form-label col-3"
           >Appointment To Date</label
         >
@@ -225,7 +227,7 @@
         />
       </div>
       <!--BUTTONS-->
-      <div class="buttons text-center">
+      <div class="buttons text-center" data-aos="flip-up">
         <input
           type="reset"
           class="btn btn-danger"
@@ -243,11 +245,17 @@
     <!--SCRIPTS-->
     <!--CUSTOM-->
     <script src="script.js"></script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
     <!--BOOTSTRAP-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
