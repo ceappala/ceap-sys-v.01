@@ -169,13 +169,13 @@ function printFunction() {
     edn_office = "Dist. Educational Officer,  Kaduthuruthy";
     place = "Kuravilangad";
   } else if (school == "St. Mary’s HSS Kuravilangad") {
-    edn_office = "Dist. Educational Officer,  Kaduthuruthy";
+    edn_office = "Dist. Educational Officer, Kaduthuruthy";
     place = "Kuravilangad";
   } else if (school == "St. Mary’s LPBS Kuravilangad") {
     edn_office = "Asst. Educational Officer, Kuravilangad";
     place = "Kuravilangad";
   } else if (school == "St. Mary’s LPGS Kuravilangad") {
-    edn_office = "Asst. Educational Officer, Kaduthuruthy";
+    edn_office = "Asst. Educational Officer, Kuravilangad";
     place = "Kuravilangad";
   } else if (school == "St. John’s HS Kurumannu") {
     edn_office = "Dist. Educational Officer,  Pala";
