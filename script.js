@@ -274,13 +274,13 @@ function printFunction() {
     edn_office = "Dist. Educational Officer,  Palai";
     place = "Mutholy";
   } else if (school == "Holy Ghost BHS Muttuchira") {
-    edn_office = "Dist. Educational Officer,  Kuravilangad";
+    edn_office = "Dist. Educational Officer,  Kaduthuruthy";
     place = "Muttuchira";
   } else if (school == "St. Agnes HS Muttuchira") {
     edn_office = "Dist. Educational Officer,  Kaduthuruthy";
     place = "Muttuchira";
   } else if (school == "St. Agnes LPS Muttuchira") {
-    edn_office = "Asst. Educational Officer, Kaduthuruthy";
+    edn_office = "Asst. Educational Officer, Kuravilangad";
     place = "Muttuchira";
   } else if (school == "St. Mary Magdalene UPS Narianganam") {
     edn_office = "Asst. Educational Officer, Pala";
