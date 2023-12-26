@@ -36,6 +36,7 @@ body {
 
 .mgr_n, .mgr_pwr {
     width: 90%;
+    margin: 5px;
     text-align: right;
 }
 
