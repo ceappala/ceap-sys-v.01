@@ -9,7 +9,6 @@ body {
 }
 
 .ceap, .diocese, .decla_head {
-    margin: 5px auto;
     text-align: center;
 }
 
@@ -32,7 +31,7 @@ body {
 }
 
 .mngr_sign {
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 
 .mgr_n, .mgr_pwr {
