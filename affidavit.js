@@ -20,5 +20,3 @@ setElementText(".school_name", school);
 setElementText(".appointment_dt, .appointment_dt2", app_d);
 setElementText(".app_to_date", app_t_d);
 setElementText(".place", place);
-
-console.log(name_appo); // Log the modified name to the console
