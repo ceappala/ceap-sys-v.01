@@ -1,18 +1,24 @@
-var name_appo = localStorage.getItem("uname");
-name_appo = name_appo.replace("Sri.", "");
-name_appo = name_appo.replace("Smt.","");
-console.log(name_appo);
-document.querySelector(".name_appo").innerHTML = name_appo;
+// Function to set text content of an element
+function setElementText(selector, value) {
+    document.querySelector(selector).innerHTML = value;
+}
+
+// Retrieve and modify data from localStorage
+var name_appo = localStorage.getItem("uname").replace(/Sri\.|Smt\./, "").trim();
 var addr = localStorage.getItem("address");
-document.querySelector(".address").innerHTML = addr;
 var designation = localStorage.getItem("designation");
-document.querySelector(".designation").innerHTML = designation;
 var school = localStorage.getItem("school");
-document.querySelector(".school_name").innerHTML = school;
 var app_d = localStorage.getItem("app_date");
-document.querySelector(".appointment_dt").innerHTML = app_d;
-document.querySelector(".appointment_dt2").innerHTML = app_d;
 var app_t_d = localStorage.getItem("to_date");
-document.querySelector(".app_to_date").innerHTML = app_t_d;
 var place = localStorage.getItem("place");
-document.querySelector(".place").innerHTML = place;
+
+// Set data in the HTML
+setElementText(".name_appo", name_appo);
+setElementText(".address", addr);
+setElementText(".designation", designation);
+setElementText(".school_name", school);
+setElementText(".appointment_dt, .appointment_dt2", app_d);
+setElementText(".app_to_date", app_t_d);
+setElementText(".place", place);
+
+console.log(name_appo); // Log the modified name to the console

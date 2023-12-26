@@ -6,72 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CEAP System V.01</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--STYLESHEETS-->
-
-    <!--CUSTOM-->
-    <link rel="stylesheet" href="style.css" />
-    <!--BOOTSTRAP-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body style="background: rgb(65, 65, 223)">
-    <div class="form-ceap" style="background: rgb(34, 34, 190)">
-      <!--NAME-->
+    <div class="container form-ceap" style="background: rgb(34, 34, 190)">
+      <h1 class="text-center mb-4">CEAP System V.01</h1>
 
-      <main>
-        <section>
-            <h2>Form Section</h2>
-            <form id="myForm">
-                <fieldset>
-                    <legend>School Information</legend>
-                    <label for="schoolName">School Name:</label>
-                    <input type="text" id="schoolName" name="schoolName">
-                    
-                    <div class="mb-3 col" data-aos="flip-up">
-        <label for="namea" class="form-label col-3">Name</label>
-        <input
-          type="text"
-          class="form-control col-6"
-          id="namea"
-          placeholder="Name of Appointee"
-        />
+      <!-- NAME -->
+      <div class="mb-3">
+        <label for="namea" class="form-label">Name</label>
+        <input type="text" class="form-control" id="namea" placeholder="Name of Appointee" />
       </div>
-      <!--ADDRESS-->
-      <div class="mb-3 col" data-aos="flip-up">
-        <label for="address" class="form-label col-3">Address</label>
-        <input
-          type="text"
-          class="form-control col-6"
-          id="address"
-          placeholder="Address"
-        />
+
+      <!-- ADDRESS -->
+      <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" placeholder="Address" />
       </div>
-      <!--Designation-->
-      <div class="mb-3 col" data-aos="flip-up">
-        <label for="desig" class="form-label col-3">Designation</label>
-        <input
-          type="text"
-          class="form-control col-6"
-          id="desig"
-          placeholder="Designation"
-        />
+
+      <!-- DESIGNATION -->
+      <div class="mb-3">
+        <label for="desig" class="form-label">Designation</label>
+        <input type="text" class="form-control" id="desig" placeholder="Designation" />
       </div>
-      <!--SCHOOL-->
-      <div class="mb-3 col" data-aos="flip-up">
+
+      <!-- SCHOOL -->
+      <div class="mb-3">
         <label for="school" class="form-label">School</label>
-        <input
-          class="form-control"
-          list="datalistOptions"
-          id="school"
-          placeholder="Type to search..."
-        />
+        <input class="form-control" list="datalistOptions" id="school" placeholder="Type to search..." />
         <datalist id="datalistOptions">
-          <!--SCHOOL LIST OPTIONS-->
+          <!-- SCHOOL LIST OPTIONS -->
           <option value="St. Mary’s LPS Adivaram"></option>
           <option value="St. John’s LPS Amparanirappel"></option>
           <option value="St. Mathew’s LPS Anthiyalam"></option>
@@ -209,63 +175,35 @@
           <option value="St. Joseph’s HS Vilakkumadom"></option>
           <option value="St. Thresias UPS Vilakumadom"></option>
           <option value=" Our Lady of  Fatima LPS Vilayamcode"></option>
+          <!-- Add more options as needed -->
         </datalist>
       </div>
-      <!--APPOINTNENT FROM-->
-      <div class="mb-3 col" data-aos="flip-up">
-        <label for="appo_date_from" class="form-label col-3"
-          >Appointment Date</label
-        >
-        <input
-          type="text"
-          class="form-control col-6"
-          id="appo_date_from"
-          placeholder="Appointment Date"
-        />
+
+      <!-- APPOINTMENT FROM -->
+      <div class="mb-3">
+        <label for="appo_date_from" class="form-label">Appointment Date</label>
+        <input type="text" class="form-control" id="appo_date_from" placeholder="Appointment Date" />
       </div>
-      <!--APPOINTNENT To-->
-      <div class="mb-3 col" data-aos="flip-up">
-        <label for="appo_date_to" class="form-label col-3"
-          >Appointment To Date</label
-        >
-        <input
-          type="text"
-          class="form-control col-6"
-          id="appo_date_to"
-          placeholder="Appointment To Date"
-        />
+
+      <!-- APPOINTMENT TO -->
+      <div class="mb-3">
+        <label for="appo_date_to" class="form-label">Appointment To Date</label>
+        <input type="text" class="form-control" id="appo_date_to" placeholder="Appointment To Date" />
       </div>
-      
+
+      <!-- BUTTONS -->
+      <div class="buttons text-center">
+        <input type="reset" class="btn btn-danger" value="RESET" onclick="resetFunction()" id="reset" />
+        <button class="btn btn-primary" id="submit" onclick="printFunction()">SUBMIT</button>
+      </div>
+
+      <div id="printerDecla" style="display:none"></div>
+      <div id="printerAffi" style="display:none"></div>
     </div>
 
-                    <button type="button" onclick="resetForm()">Reset Form</button>
-                </fieldset>
-
-                <button type="button" id="submit" onclick="submitForm()">Submit</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Print Section</h2>
-            <button type="button" onclick="printPage()">Print Declaration</button>
-            <div id="printerDecla"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Your Company</p>
-    </footer>
-      
-    <!--SCRIPTS-->
-    <!--CUSTOM-->
     <script src="script.js"></script>
-    
-    <!--BOOTSTRAP-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    
+
+    <!-- BOOTSTRAP JS AND POPPER.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

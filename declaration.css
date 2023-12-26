@@ -1,91 +1,92 @@
-*{
-    padding: 0;
-    margin: 0;
+/* declaration.css */
+body {
     font-family: 'Times New Roman', Times, serif;
-    box-sizing: border-box;
-    font-size: 16px;
 }
-.decla_content{
-    width: 100vw;
-    height: auto;
+
+.decla_content {
     margin: 5px auto;
     text-align: center;
 }
-.decla_content h3{
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 15px auto;
-}
-.decla_content h4{
-    width: 100%;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 15px auto;
-}
-.decla_content h5{
-    width: 100%;
-    font-size: 17px;
-    margin: 15px auto;
-}
 
-.decla_content h3, h4, h5{
+.ceap, .diocese, .decla_head {
     text-align: center;
 }
-.order_no{
+
+.decla_content h3, .decla_content h4, .decla_content h5 {
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.order_no {
     font-size: 12px;
     text-align: center;
     margin: 5px 25px;
     font-weight: bold;
 }
-.decla_para{
+
+.decla_para {
     margin: 5px 30px;
     text-align: justify;
     line-height: 1.5rem;
 }
-.mngr_sign{
-    height: 30%;
-    width: 100%;
-    background: black;
-    margin: 30px 10px;
+
+.mngr_sign {
+    margin: 20px 10px;
 }
-.mgr_n{
+
+.mgr_n, .mgr_pwr {
     width: 90%;
-    height: 50%;
-    float: left;
     text-align: right;
 }
-.mgr_pwr{
-    width: 90%;
-    height: 50%;
-    float: left;
-    text-align: right;
-}
-.second_decla{
+
+.second_decla {
     width: 100%;
 }
-.footer{
+
+.footer {
     height: 30%;
     width: 90%;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    margin: 30px auto;
+    margin: 1px auto;
 }
-.date{
+
+.date, .sign {
     width: 50%;
-    text-align: left;
 }
-.sign{
-    width: 50%;
-    text-align: right;
-}
-.sign p{
+
+.sign p {
     text-align: center;
 }
-span{
+
+span {
     font-weight: bold;
 }
+
 @media print {
-    @page { margin: 0; }
-    body { margin: 1.6cm; }
+    @page {
+        margin: 0.5cm; /* Adjust margin as needed */
+    }
+
+    body {
+        margin: 0;
+    }
+  
+    /* Additional styles for removing headers and footers */
+    @page :first {
+      margin-top: 0;
+    }
+  
+    @page :left {
+      margin-left: 0;
+    }
+  
+    @page :right {
+      margin-right: 0;
+    }
+  
+    header, footer {
+      display: none;
+    }
   }
+  

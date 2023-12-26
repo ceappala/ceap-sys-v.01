@@ -1,92 +1,109 @@
-*{
-  padding: 0;
-  margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  box-sizing: border-box;
-  font-size: 19px;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-size: 19px;
 }
-.affidavit_content{
-  position: absolute;
-  width: 100vw;
-  height: auto;
-  margin: 5px auto;
-  text-align: center;
-  padding: 76px 30px;
-  margin: 76px 20px;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
-h3{
-  font-size: 29px;
-  font-weight: 700;
-  text-align: center;
-  margin: 10px auto;
+
+.affidavit_content {
+    width: 100%;
+    max-width: 600px; /* Adjusted max-width for better readability */
+    height: auto;
+    padding: 20px;
+    text-align: center;
 }
-h4{
-  font-size: 19px;
-  font-weight: 700;
-  text-align: center;
-  margin: 10px auto;
+
+.head {
+    font-size: 29px;
+    font-weight: 700;
+    margin: 10px auto;
 }
-.affi_cont{
-  text-align: justify;
-  line-height: 2em;
-  padding: 30px;
-  font-size: 19px;
+
+.order_no {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 10px auto;
 }
-.footer_1{
-  width: 80%;
-  height: auto;
-  display: inline-flex;
-  flex-direction: row;
-  margin: 15px auto;
-  font-size: 19px;
+
+.affi_cont {
+    text-align: justify;
+    line-height: 1.6em;
+    padding: 20px;
+    font-size: 19px;
 }
-.date p,.sign p{
-  font-size: 19px;
+
+.footer_1, .footer_3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+    margin-top: 15px;
 }
-.date{
-  width: 50%;
-  float: left;
-  text-align: left;
-  font-size: 19px;
+
+.date {
+    width: 50%;
+    text-align: left;
 }
-.sign{
-  width: 50%;
-  text-align: right;
-  float: right;
-  font-size: 19px;
+
+.sign {
+    width: 50%;
+    text-align: right;
 }
-.footer_2{
-  width: 100%;
-  margin-top: 25px;
-  text-align: center;
-  font-size: 19px;
+
+.footer_2 {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 19px;
 }
-.footer_2 p{
-  font-size: 19px;
+
+.footer_3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
-.footer_3{
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 19px;
-  display: inline-flex;
-  flex-direction: row;
+
+.mgr, .edn_off {
+    width: 48%; /* Adjusted width for better spacing */
+    font-size: 19px;
+    margin: 15px;
 }
-.mgr{
-  width: 50%;
-  font-size: 19px;
-  margin: 15px;
+
+span {
+    font-weight: bold;
 }
-.edn_off{
-  width: 50%;
-  font-size: 19px;
-  margin: 15px;
-  float: right;
-}
-span{
-  font-weight: bold;
-}
+
 @media print {
-    @page { margin: 0; }
-    body { margin: 1.6cm; }
-  }
+    @page {
+        margin: 0;
+    }
+
+    body {
+        margin: 1.6cm;
+    }
+
+    /* Additional styles for removing headers and footers */
+    @page :first {
+        margin-top: 0;
+    }
+
+    @page :left {
+        margin-left: 0;
+    }
+
+    @page :right {
+        margin-right: 0;
+    }
+
+    header, footer {
+        display: none;
+    }
+}
