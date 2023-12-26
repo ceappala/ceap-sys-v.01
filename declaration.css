@@ -65,12 +65,12 @@ span {
 
 @media print {
     @page {
-        margin: 0.5cm; /* Adjust margin as needed */
-    }
-
-    body {
         margin: 0;
-    }
+      }
+    
+      body {
+        margin: 1.6cm;
+      }
   
     /* Additional styles for removing headers and footers */
     @page :first {
