@@ -22,7 +22,17 @@
   <body style="background: rgb(65, 65, 223)">
     <div class="form-ceap" style="background: rgb(34, 34, 190)">
       <!--NAME-->
-      <div class="mb-3 col" data-aos="flip-up">
+
+      <main>
+        <section>
+            <h2>Form Section</h2>
+            <form id="myForm">
+                <fieldset>
+                    <legend>School Information</legend>
+                    <label for="schoolName">School Name:</label>
+                    <input type="text" id="schoolName" name="schoolName">
+                    
+                    <div class="mb-3 col" data-aos="flip-up">
         <label for="namea" class="form-label col-3">Name</label>
         <input
           type="text"
@@ -225,22 +235,27 @@
           placeholder="Appointment To Date"
         />
       </div>
-      <!--BUTTONS-->
-      <div class="buttons text-center">
-        <input
-          type="reset"
-          class="btn btn-danger"
-          value="RESET"
-          onclick="resetFunction()"
-          id="reset"
-        />
-        <button class="btn btn-primary" id="submit" onclick="printFunction()">
-          SUBMIT
-        </button>
-      </div>
-      <div id="printerDecla" style="display:none"></div>
-      <div id="printerAffi" style="display:none"></div>
+      
     </div>
+
+                    <button type="button" onclick="resetForm()">Reset Form</button>
+                </fieldset>
+
+                <button type="button" id="submit" onclick="submitForm()">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Print Section</h2>
+            <button type="button" onclick="printPage()">Print Declaration</button>
+            <div id="printerDecla"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+      
     <!--SCRIPTS-->
     <!--CUSTOM-->
     <script src="script.js"></script>
