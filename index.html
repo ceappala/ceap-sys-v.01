@@ -1,209 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CEAP System V.01</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- BOOTSTRAP CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="background: rgb(65, 65, 223)">
-    <div class="container form-ceap" style="background: rgb(34, 34, 190)">
-      <h1 class="text-center mb-4">CEAP System V.01</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Home - CEAP</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Optional: Custom styles for additional spacing or styling */
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
 
-      <!-- NAME -->
-      <div class="mb-3">
-        <label for="namea" class="form-label">Name</label>
-        <input type="text" class="form-control" id="namea" placeholder="Name of Appointee" />
+  <div class="text-center">
+    <h1><img src="favicon.ico" class="img-fluid" alt=""></h1>
+    <h1>CEAP Info System</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="appointment.html" class="text-decoration-none"><button class="btn btn-primary btn-block">Appointment Files</button></a>
+        </div>
       </div>
-
-      <!-- ADDRESS -->
-      <div class="mb-3">
-        <label for="address" class="form-label">Address</label>
-        <input type="text" class="form-control" id="address" placeholder="Address" />
+      <div class="row">
+        <div class="col">
+          <a href="https://donypsaju.github.io/Note-Counter/" class="text-decoration-none"><button class="btn btn-secondary btn-block">Note Counter</button></a>
+        </div>
       </div>
-
-      <!-- DESIGNATION -->
-      <div class="mb-3">
-        <label for="desig" class="form-label">Designation</label>
-        <input type="text" class="form-control" id="desig" placeholder="Designation" />
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-success btn-block">Seniority List</button></a>
+        </div>
       </div>
-
-      <!-- SCHOOL -->
-      <div class="mb-3">
-        <label for="school" class="form-label">School</label>
-        <input class="form-control" list="datalistOptions" id="school" placeholder="Type to search..." />
-        <datalist id="datalistOptions">
-          <!-- SCHOOL LIST OPTIONS -->
-          <option value="St. Mary’s LPS Adivaram"></option>
-          <option value="St. John’s LPS Amparanirappel"></option>
-          <option value="St. Mathew’s LPS Anthiyalam"></option>
-          <option value="St. Mary’s HSS Arakulam"></option>
-          <option value="St. Thomas UPS Arakulam"></option>
-          <option value="St. George HSS Aruvithura"></option>
-          <option value="St. Mary’s LPS Aruvithura"></option>
-          <option value="Little Flower LPS Ayyampara"></option>
-          <option value="St. Little Thresias LPS Bharananganam"></option>
-          <option value="St. Mary’s HSS Bharananganam"></option>
-          <option value="St. Thomas LPS Cheenkallel"></option>
-          <option value="Little Flower HS Chemmalamattom"></option>
-          <option value="St. Maria Gorettis HS Chennad"></option>
-          <option value="Holy Cross HSS Cherpunkal"></option>
-          <option value="St. Joseph’s LPS Chettuthode"></option>
-          <option value="St. George LPS Chittar"></option>
-          <option value="St. Antony’s UPS Edamaruku"></option>
-          <option value="St. Peter’s HSS Elanji"></option>
-          <option value="St. Peter’s LPS Elanji"></option>
-          <option value="St. George LPS Elivalley"></option>
-          <option value="St. John’s LPS Ezhachery"></option>
-          <option value="St. Mathew’s LPS Kadanad"></option>
-          <option value="St. Sebastians HSS Kadanad"></option>
-          <option value="St. Antony’s HS Kadaplamattom"></option>
-          <option value="St. Joseph’s LPS Kadaplamattom"></option>
-          <option value="St. George LPS Kaduthuruthy"></option>
-          <option value="St. Mary’s LPS Kakkombe"></option>
-          <option value="Holy Cross LPS Kalathoor"></option>
-          <option value="St. Mary’s LPS Kalathoor"></option>
-          <option value="St. Mary’s UPS Kalathoor"></option>
-          <option value="Sr.Alphonsa LPS Kalathukadavu"></option>
-          <option value="St. Joseph’s LPS Kanjar"></option>
-          <option value="Little Flower HS Kanjiramattom"></option>
-          <option value="Little Flower LPS Kanjiramattom"></option>
-          <option value="St. Johns HS Kanjirathanam"></option>
-          <option value="St. Joseph’s UPS Kannadiurumpu"></option>
-          <option value="St. Joseph’s UPS Karoor"></option>
-          <option value="St. Ephrem’s UPS Kaveekunnu"></option>
-          <option value="St. Antony’s LPS Koodalloor"></option>
-          <option value="St. Xavier’s UPS Kooru"></option>
-          <option value="St. George HS Koottickal"></option>
-          <option value="Emmanuels HSS Kothanalloor"></option>
-          <option value="St. Johns NHSS Kozhuvanal"></option>
-          <option value="St. Joseph’s LPS Kudakkachira"></option>
-          <option value="St. Joseph's HS Kudakkachira"></option>
-          <option value="St. Augustine’s LPS Kudayathoor"></option>
-          <option value="St. Joseph’s UPS Kunnonny"></option>
-          <option value="St. Mary’s GHS Kuravilangad"></option>
-          <option value="St. Mary’s HSS Kuravilangad"></option>
-          <option value="St. Mary’s LPBS Kuravilangad"></option>
-          <option value="St. Mary’s LPGS Kuravilangad"></option>
-          <option value="St.John’s HS Kurumannu"></option>
-          <option value="St. Xavier’s LPS Kuruppanthara"></option>
-          <option value="St. Xaviers VHSS Kuruppanthara"></option>
-          <option value="St. Michael’s LPS Kuruvinal"></option>
-          <option value="St. Mary’s LPS Lalam"></option>
-          <option value="St. Joseph’s UPS Malayinchippara"></option>
-          <option value="St. Dominic Savio UPS Mallikassery"></option>
-          <option value="Holy Family LPS Manalumkal"></option>
-          <option value="St. Aloysious HS Manalumkal"></option>
-          <option value="St. Joseph’s HS Manathoor"></option>
-          <option value="St. Thomas LPS Mangalagiri"></option>
-          <option value="St. Joseph’s UPS Maniankunnu"></option>
-          <option value="St. George UPS  Manvettam"></option>
-          <option value="St. Thomas HS Marangattupally"></option>
-          <option value="St. Thomas LPS Marangattupilly"></option>
-          <option value="St. Mary’s LPS Maridom"></option>
-          <option value="St. Mary’s LPS Maryland"></option>
-          <option value="St. Antony’s LPS Mattakara"></option>
-          <option value="St. Joseph’s HS Mattakara"></option>
-          <option value="Holy Cross UPS Mattathippara"></option>
-          <option value="Aided LPS Meenachil"></option>
-          <option value="St. Thomas UPS Melukavumattom"></option>
-          <option value="St. George UPS Moolamattom"></option>
-          <option value="St. Mary’s LPS Moozhoor"></option>
-          <option value="St. Antony’s LPS Mulakulam"></option>
-          <option value="Little Flower UPS Mundankal"></option>
-          <option value="St. George LPS Mutholapuram"></option>
-          <option value="St. Paul’s HS Mutholapuram"></option>
-          <option value="St. Paul’s LPS Mutholapuram"></option>
-          <option value="St. George LPS Mutholy"></option>
-          <option value="St. Joseph’s GHS Mutholy"></option>
-          <option value="St. Joseph’s TTI  Mutholy"></option>
-          <option value="Holy Ghost BHS Muttuchira"></option>
-          <option value="St. Agnes HS Muttuchira"></option>
-          <option value="St. Agnes LPS Muttuchira"></option>
-          <option value="St. Mary Magdalene UPS Narianganam"></option>
-          <option value="St. Joseph’s UPS Neeloor"></option>
-          <option value="St. Thomas UPS Neeranthanam"></option>
-          <option value="St. Antony’s  UPS Paduva"></option>
-          <option value="St. Antony’s LPS Paduva"></option>
-          <option value="Little Flower LPS Paika"></option>
-          <option value="St. Mary’s GHSS Pala"></option>
-          <option value="St. Thomas BHSS Pala"></option>
-          <option value="St. Thomas TTI  Pala"></option>
-          <option value="St. Antony’s LPS Palakara"></option>
-          <option value="St. Xavier’s UPS Palayam"></option>
-          <option value="SVE UPS  Parathanam"></option>
-          <option value="St. Sebastian’s LPS Pathazha"></option>
-          <option value="St. Augustines HS Peringulam"></option>
-          <option value="St. Pius X UPS PiusMount"></option>
-          <option value="St. Antony’s HSS Plassanal"></option>
-          <option value="St. Joseph’s UPS Poonjar"></option>
-          <option value="St. Thomas UPS Poovathode"></option>
-          <option value="St. Augustine’s LPS Pravithanam"></option>
-          <option value="St. Michael’s HSS Pravithanam"></option>
-          <option value="Kalanilayam UPS Puliyannoor"></option>
-          <option value="North LPS Ramapuram"></option>
-          <option value="Sacred Heart LPS Ramapuram"></option>
-          <option value="Sacred Heart GHS Ramapuram"></option>
-          <option value="St. Augustine’s HSS Ramapuram"></option>
-          <option value="St. Mary’s HSS Teekoy"></option>
-          <option value="St. Mary’s LPS Teekoy"></option>
-          <option value="Infant Jesus LPS Thodanal"></option>
-          <option value="St. Thomas HS Thudanganad"></option>
-          <option value="St. Thomas LPS Thudanganad"></option>
-          <option value="St. George LPS Thuruthippally"></option>
-          <option value="Sacred Heart’s UPS Ullanad"></option>
-          <option value="St. George UPS Urulikunnam"></option>
-          <option value="Little Flower HS Vadakara"></option>
-          <option value="Little Flower LPS Vadakara"></option>
-          <option value="St. George LPS Vailkanampara"></option>
-          <option value="Alphonsa GHS Vakakkad"></option>
-          <option value="St. Paul’s LPS Vakakkad"></option>
-          <option value="St. Cruz LPS Valachira"></option>
-          <option value="St.  Paul’s HS Valiyakumaramangalam"></option>
-          <option value="St. Mary’s LP Valiyakumaramangalam"></option>
-          <option value="St. Thomas LPS Velathussery"></option>
-          <option value="St. Antony’s HS Vellikulam"></option>
-          <option value="St. Joseph’s LPS Vellilappilly"></option>
-          <option value="St. Joseph’s UPS Vellilappilly"></option>
-          <option value="St. Joseph’s UPS Velliyamattom"></option>
-          <option value="KCM LPS Vettickanam"></option>
-          <option value="St. Joseph’s LPS Vezhanganam"></option>
-          <option value="St. Joseph’s HS Vilakkumadom"></option>
-          <option value="St. Thresias UPS Vilakumadom"></option>
-          <option value=" Our Lady of  Fatima LPS Vilayamcode"></option>
-          <!-- Add more options as needed -->
-        </datalist>
+      <div class="row">
+        <div class="col">
+          <button class="btn btn-danger btn-block">Others</button></a>
+        </div>
       </div>
-
-      <!-- APPOINTMENT FROM -->
-      <div class="mb-3">
-        <label for="appo_date_from" class="form-label">Appointment Date</label>
-        <input type="text" class="form-control" id="appo_date_from" placeholder="Appointment Date" />
-      </div>
-
-      <!-- APPOINTMENT TO -->
-      <div class="mb-3">
-        <label for="appo_date_to" class="form-label">Appointment To Date</label>
-        <input type="text" class="form-control" id="appo_date_to" placeholder="Appointment To Date" />
-      </div>
-
-      <!-- BUTTONS -->
-      <div class="buttons text-center">
-        <input type="reset" class="btn btn-danger" value="RESET" onclick="resetFunction()" id="reset" />
-        <button class="btn btn-primary" id="submit" onclick="printFunction()">SUBMIT</button>
-      </div>
-
-      <div id="printerDecla" style="display:none"></div>
-      <div id="printerAffi" style="display:none"></div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- BOOTSTRAP JS AND POPPER.JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
