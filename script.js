@@ -183,9 +183,3 @@ function resetFunction() {
     div.innerHTML = '<iframe src="declaration.html" onload="this.contentWindow.print();"></iframe>';
     div2.innerHTML = '<iframe src="affidavit.html" onload="this.contentWindow.print();"></iframe>';
   }
-  console.log(name_appo);
-  console.log(address);
-  console.log(design);
-  console.log(school);
-  console.log(appo_date);
-  console.log(appo_date_to);
